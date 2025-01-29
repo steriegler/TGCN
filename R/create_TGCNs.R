@@ -479,7 +479,7 @@ getGeneSetEnrichment <- function(lasso_models=NULL, net=NULL,
   enrich <- gprofiler2::gost(all.genes,
                              correction_method="g_SCS",
                              sources=sources,
-                             organism = "hsapiens",
+                             organism = 'ccanephora',#"hsapiens",
                              exclude_iea = T)$result
 
   if(!is.null(enrich)) {
