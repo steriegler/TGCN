@@ -480,7 +480,8 @@ getGeneSetEnrichment <- function(lasso_models=NULL, net=NULL,
                              correction_method="g_SCS",
                              sources=sources,
                              organism = 'ccanephora',#"hsapiens",
-                             exclude_iea = F)$result # F because ccanephora doesn't have much in terms of non-electronic annotations
+                             exclude_iea = F,
+                             significant = F)$result # F because ccanephora doesn't have much in terms of non-electronic annotations
 
   if(!is.null(enrich)) {
     enrich <- enrich[order(enrich$query, enrich$p_value, decreasing=F), ]
