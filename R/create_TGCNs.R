@@ -441,7 +441,7 @@ getHubGenes <- function(exprData,
 #' @examples
 
 getGeneSetEnrichment <- function(lasso_models=NULL, net=NULL,
-                                 sources = c("GO", "KEGG", "REAC", "HP"), hubs=T) {
+                                 sources = c("GO"), hubs=T) { #, "KEGG", "REAC", "HP"
 
   # Load libraries
   require(gprofiler2)
